@@ -1,0 +1,20 @@
+<!--pages/statistics/statistics.wxml-->
+<view class="header">
+  <view class="header_time">
+    <picker mode="date" fields="month" start="1999-12" value="{{date}}" 
+            bindchange="bindDateChange">
+      <view style="font-size: 26rpx; color:#3bbafb;">{{header_yy}}年</view>
+      <view>{{header_mm}}月<image src="../../asstes/tabbar/arrow_down.png" /></view>
+    </picker>
+  </view>
+  <view class="header_time">
+    <view style="font-size: 26rpx; color:#3bbafb;">收入</view>
+    <view>0.00</view>
+  </view>
+  <view class="header_time">
+     <view style="font-size: 26rpx; color:#3bbafb;">支出</view>
+     <view>0.00</view>
+  </view>
+</view>
+<sta-cont />
+

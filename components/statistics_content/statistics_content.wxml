@@ -1,0 +1,19 @@
+<!--components/statistics_content/statistics_content.wxml-->
+<view class="content">
+    <view class="title_item" wx:if="{{header_yy&&header_dd&&header_mm !='' && num != 0}}">
+          {{header_yy}}{{header_mm}}{{header_dd}}</view>
+    <block wx:for="{{live}}" wx:key="index" data-index="{{live_index}}" 
+           wx:if="{{index == live_index && num != 0}}">
+      <view class="list_item">{{item.text}}
+        <view class="expenditure">-{{num}}</view>
+      </view>
+      <view class="item_img"><image src="{{item.img}}" /></view>
+    </block>
+    <block wx:for="{{income}}" wx:key="index" data-index="{{income_index}}" 
+           wx:if="{{index == income_index && num != 0}}">
+      <view class="list_item">{{item.text}}
+        <view class="expenditure">+{{num}}</view>
+      </view>
+      <view class="item_img"><image src="{{item.img}}" /></view>
+    </block>
+</view>

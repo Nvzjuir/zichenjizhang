@@ -1,0 +1,57 @@
+<!--components/keich_content/keich_content.wxml-->
+<swiper current="{{content}}" class='swiper' style="height:600px;" duration="300"                             bindchange="bindchange">
+  <swiper-item><view class="live">
+    <block wx:for="{{live}}" wx:key="index" >
+      <view class="live_item">
+        <image src="{{item.img}}" bindtap="clickme" data-index="{{index}}" />
+        <view>{{item.text}}</view>
+      </view>
+    </block>
+  </view></swiper-item>
+  <swiper-item><view class="live">
+    <block wx:for="{{income}}" wx:key="index">
+      <view class="live_item" >
+        <image src="{{item.img}}" bindtap="clickme" data-index="{{index}}" />
+        <view>{{item.text}}</view>
+      </view>
+    </block>
+  </view></swiper-item>
+</swiper>
+<view class="commodity_screen" bindtap="tapsum" wx:if="{{showModalStatus}}"></view>
+<view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}" >
+  <view class="popup_input">
+    <input class="remark" maxlength="20" placeholder="备注" bindinput="bindKeyInput" />
+    <input class="num" disabled maxlength="10" value="{{num}}" />
+    <view class="content">
+      <view class="figure">
+        <block wx:for="{{9}}" wx:key="index">
+          <view class="figure_item" hover-class="hover" hover-stay-time="200" bindtap="calculate"
+                data-index="{{index}}">
+          {{item + 1}}
+          </view>
+        </block>
+      </view>
+      <view class="content_right">
+        <picker mode="date" fields="day" start="1999-12" value="{{date}}" 
+        bindchange="bindDateChange">
+        <view class="right_item" hover-class="hover" hover-stay-time="200">
+        {{header_mm}}/{{header_dd}}</view>
+        </picker>
+        <view class="right_item" hover-class="hover" hover-stay-time="200" 
+              data-current = "1" bindtap="taprest">+</view>
+        <view class="right_item" hover-class="hover" hover-stay-time="200" 
+              data-current = "2" bindtap="taprest">-</view>
+      </view>
+    </view>
+    <view class="bottom">
+        <view class="bottom_item" hover-class="hover" hover-stay-time="200" 
+              data-current = "3" bindtap="taprest">.</view>
+        <view class="bottom_item" hover-class="hover" hover-stay-time="200" 
+              data-current = "4" bindtap="taprest">0</view>
+        <view class="bottom_item" hover-class="hover" hover-stay-time="200" bindtap="tapempty">
+            <image src ="/asstes/keich/quxiao.png" />
+              </view>
+        <view class="bottom_item" hover-class="hover" hover-stay-time="200" bindtap="tapsum">确认             </view>
+    </view>
+  </view>
+</view>

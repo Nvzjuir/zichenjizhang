@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "sta-cont":"/components/statistics_content/statistics_content"
+  },
+  "navigationBarTitleText": "统计"
+}

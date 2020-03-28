@@ -1,0 +1,19 @@
+/* pages/statistics/statistics.wxss */
+.header{
+  height: 160rpx;
+  background-color: #BCE7FD;
+}
+.header_time{
+  height: 160rpx;
+  text-align: center;
+  width: 33%;
+  display: inline-block;
+}
+.header_time view{
+  margin: 25rpx 0;
+}
+.header_time image{
+  width: 30rpx;
+  height: 30rpx;
+}
+

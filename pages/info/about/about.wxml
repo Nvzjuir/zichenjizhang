@@ -1,0 +1,9 @@
+<!--pages/info/about/about.wxml-->
+<view class="title">体验版\n</view>
+<view class="content">
+  <text>版本号:1.0.1\n</text>
+  <text>更新:修复日期显示错误\n</text>
+  <text>已知问题:iPhone计算框显示错误</text>
+</view>
+
+

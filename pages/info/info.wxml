@@ -1,0 +1,20 @@
+<!--pages/info/info.wxml-->
+<view class="header">
+  <view class="head-portrait " ></view>
+</view>
+<view class="content">
+  <view class="clauses">
+    <navigator url="about/about" class="navtext" hover-class="none">
+      <text>关于</text>
+      <image src="../../asstes/tabbar/arrow_right.png" />
+    </navigator>
+    <navigator url="setting/setting" class="navtext" hover-class="none">
+      <text>设置</text>
+      <image src="../../asstes/tabbar/arrow_right.png" />
+    </navigator>    
+    <navigator url="about/about" class="navtext" hover-class="none">
+      <text>分享</text>
+      <image src="../../asstes/tabbar/arrow_right.png" />
+    </navigator>
+  </view>
+</view>

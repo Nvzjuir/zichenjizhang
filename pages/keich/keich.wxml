@@ -1,0 +1,10 @@
+<!--pages/keich/keich.wxml-->
+<view class="header">
+  <view class="cost">
+    <view class='header_left {{content == 0 ? "tabBorer" : ""}}'
+          bind:tap="checkCurrent" data-current = "0">支出</view>
+    <view class='header_right {{content == 1 ? "tabBorer" : ""}}'
+          bind:tap="checkCurrent" data-current = "1">收入</view>
+  </view>
+</view>
+<hd-left content="{{content}}" />

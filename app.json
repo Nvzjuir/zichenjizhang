@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/statistics/statistics",
+    "components/statistics_content/statistics_content",
+    "pages/keich/keich",
+    "pages/info/about/about",
+    "pages/info/setting/setting",
+    "components/keich_content/keich_content",
+    "pages/info/info"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#BCE7FD",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "每日记账",
+    "backgroundColor": "#EFF8FC",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/statistics/statistics",
+        "text": "统计",
+        "iconPath": "asstes/tabbar/icon-test.png",
+        "selectedIconPath": "asstes/tabbar/icon-test1.png"
+      },
+      {
+        "pagePath": "pages/keich/keich",
+        "text": "每日记账",
+        "iconPath": "asstes/tabbar/icon-test_15.png",
+        "selectedIconPath": "asstes/tabbar/icon-test_15.png"
+      },
+      {
+        "pagePath": "pages/info/info",
+        "text": "我的",
+        "iconPath": "asstes/tabbar/user.png",
+        "selectedIconPath": "asstes/tabbar/user_1.png"
+      }
+    ],
+    "selectedColor": "#000000"
+  },
+  "sitemapLocation": "sitemap89.json"
+}

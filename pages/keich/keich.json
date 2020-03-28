@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "hd-left": "/components/keich_content/keich_content"
+  }
+}

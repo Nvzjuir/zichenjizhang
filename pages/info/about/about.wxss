@@ -1,0 +1,11 @@
+/* pages/info/about/about.wxss */
+.title{
+  font-size: 50rpx;
+  color: red;
+  text-align: center;
+  margin-bottom: 50rpx;
+}
+.content{
+  border-bottom: 1rpx solid rgba(0, 0, 0, .3);
+  padding:30rpx 20rpx; 
+}
